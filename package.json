@@ -1,0 +1,23 @@
+{
+  "name": "appsync-graphql",
+  "version": "1.0.0",
+  "description": "Show example of using serverless with aws appsync and graphql",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfolivas/appsync-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfolivas/appsync-graphql/issues"
+  },
+  "homepage": "https://github.com/mfolivas/appsync-graphql#readme",
+  "dependencies": {
+    "serverless-appsync-plugin": "^1.1.2",
+    "serverless-pseudo-parameters": "^2.5.0"
+  }
+}
