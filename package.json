@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/mfolivas/appsync-graphql#readme",
   "dependencies": {
+    "amazon-cognito-identity-js": "^3.2.0",
     "serverless-appsync-plugin": "^1.1.2",
     "serverless-pseudo-parameters": "^2.5.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.560.0"
   }
 }

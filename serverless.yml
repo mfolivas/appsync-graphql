@@ -9,12 +9,17 @@ provider:
   runtime: nodejs10.x
   profile: tikd
 
+  iamRoleStatements:
+    - Effect: Allow
+      Action: lambda:InvokeFunction
+      Resource: arn:aws:lambda:#{AWS::Region}:#{AWS::AccountId}:function:optimus-prime-${self:provider.stage}-get-garage-citations
+
 functions:
   graphql:
     handler: handler.graphql
 
 custom:
-  accountId: #{AWS::AccountId}
+  accountId: {AWS::AccountId}
   appSync:
     name: sls-appsync-api
     authenticationType: AMAZON_COGNITO_USER_POOLS
